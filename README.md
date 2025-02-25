@@ -1,4 +1,5 @@
-ip netns add A 
+```sh
+ip netns add A
 ip netns add B
 ip netns ls
 
@@ -36,4 +37,4 @@ ip netns exec B ping 10.0.0.1
 # bring up loopback link to ping itself
 ip netns exec A ip link set lo up
 ip netns exec A ping 10.0.0.1
-
+```
